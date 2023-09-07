@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+   
+}
+.box{
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.btns{
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+    cursor: pointer;
+    text-align: center;
+    line-height: 60px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.btns:nth-child(1),
+.btns:nth-child(2),
+.btns:nth-child(3),
+.btns:nth-child(4),
+.btns:nth-child(5){
+    border-top: 2px solid black;
+}
+
+.btns:nth-child(1),
+.btns:nth-child(6),
+.btns:nth-child(11),
+.btns:nth-child(16),
+.btns:nth-child(21) {
+    border-left: 2px solid black;
+}
+
+.btns:nth-child(5),
+.btns:nth-child(10),
+.btns:nth-child(15),
+.btns:nth-child(20),
+.btns:nth-child(25) {
+    border-right: 2px solid black;
+}
+
+.btns:nth-child(1),
+.btns:nth-child(2),
+.btns:nth-child(3),
+.btns:nth-child(4),
+.btns:nth-child(5) {
+    border-top: 2px solid black;
+}
+
+.btns:nth-child(21),
+.btns:nth-child(22),
+.btns:nth-child(23),
+.btns:nth-child(24),
+.btns:nth-child(25) {
+    border-bottom: 2px solid black;
+}
+.active{
+    background-color: yellow;
+    color: black;
+}
+
+.start{
+    width: 100px;
+    margin: 30px 0;
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.9;
+    cursor: pointer;
+}
+.start:active{
+    opacity: 1;
+}
+.bingos{
+    display: flex;
+}
+.bingo{
+    font-size: 40px;
+    padding: 10px;
+    font-weight: bold;
+    position: relative;
+
+}
+
+.cross{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 20px;
+    transform: rotate(33deg);
+    width: 3px;
+    background-color: rgb(103, 96, 96);
+    display: none;
+}
+
+.active2{
+    display: inline-block;
+}
+
+.active3{
+    pointer-events: none;
+}
