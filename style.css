@@ -19,7 +19,6 @@ body{
     width: 300px;
     display: flex;
     flex-wrap: wrap;
-    
 }
 .btns{
     width: 60px;
@@ -31,49 +30,45 @@ body{
     font-size: 20px;
     font-weight: bold;
 }
-.btns:nth-child(1),
-.btns:nth-child(2),
-.btns:nth-child(3),
-.btns:nth-child(4),
-.btns:nth-child(5){
-    border-top: 2px solid black;
+
+
+
+.a{
+    position: relative;
+}
+.x{
+    position: absolute;
+    top: 0px;
+    width: 2px;
+    height: 60px;
+    position: absolute;
+    right: 28px;
+    background-color: #a29f9f;
+    transform: rotate(45deg);
+    display: none;
+    opacity: 0.5;
+}
+.y {
+    position: absolute;
+    top: 0px;
+    width: 2px;
+    height: 60px;
+    position: absolute;
+    right: 28px;
+    background-color: #a29f9f;
+    transform: rotate(-45deg);
+    display: none;
+    opacity: 0.5;
 }
 
-.btns:nth-child(1),
-.btns:nth-child(6),
-.btns:nth-child(11),
-.btns:nth-child(16),
-.btns:nth-child(21) {
-    border-left: 2px solid black;
+.active {
+    display: block;
 }
 
-.btns:nth-child(5),
-.btns:nth-child(10),
-.btns:nth-child(15),
-.btns:nth-child(20),
-.btns:nth-child(25) {
-    border-right: 2px solid black;
-}
 
-.btns:nth-child(1),
-.btns:nth-child(2),
-.btns:nth-child(3),
-.btns:nth-child(4),
-.btns:nth-child(5) {
-    border-top: 2px solid black;
-}
 
-.btns:nth-child(21),
-.btns:nth-child(22),
-.btns:nth-child(23),
-.btns:nth-child(24),
-.btns:nth-child(25) {
-    border-bottom: 2px solid black;
-}
-.active{
-    background-color: yellow;
-    color: black;
-}
+
+
 
 .start{
     width: 100px;

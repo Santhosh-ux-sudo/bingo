@@ -2,6 +2,9 @@ const btns=document.querySelectorAll(".btns")
 const start_btn=document.querySelector(".start")
 const bingo=document.querySelectorAll(".bingo")
 const cross=document.querySelectorAll(".cross")
+const xxx=document.querySelectorAll(".x")
+const yyy=document.querySelectorAll(".y")
+
 let a=1,f,count=0
 let c=[]
 for(let i=0;i<25;i++){
@@ -33,7 +36,8 @@ start_btn.addEventListener("click",function(){
            
              btns[i].addEventListener("click",function(){
                 if(c[i]==0){
-                    btns[i].classList.add("active")
+                    xxx[i].classList.add("active")
+                    yyy[i].classList.add("active")
                     c[i]=1
                     check()
                 }                
